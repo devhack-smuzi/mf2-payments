@@ -1,1 +1,32 @@
-/* You can add global styles to this file, and also import other style files */
+$main-background: rgba(242, 244, 247, 0.5);
+$main-background-light-darkness: rgba(242, 244, 247, 0.75);;
+
+@mixin transition($prop) {
+  transition: $prop .3s;
+}
+
+
+mf2-payments {
+  max-width: 1080px;
+  display: grid;
+  background-color: $main-background;
+  color: #333;
+}
+
+
+a, button:hover {
+  cursor: pointer;
+}
+
+html {
+  font-family: 'Roboto', sans-serif;
+
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  font-family: sans-serif;
+}

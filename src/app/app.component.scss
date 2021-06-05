@@ -1,0 +1,135 @@
+@import '../styles';
+
+
+.app {
+  max-width: 980px;
+  width: 100%;
+  justify-self: center;
+  display: grid;
+
+  .search {
+    min-height: 50px;
+    display: flex;
+    align-items: center;
+    margin: 50px 0;
+    background-color: #fff;
+    border: 1px solid rgba(0, 66, 105, 0.28);
+    box-sizing: border-box;
+    border-radius: 4px;
+    padding: 0 10px 0 30px;
+    width: 100%;
+    font-size: 16px;
+
+    &::placeholder {
+      color: rgba(0, 32, 51, 0.35);
+    }
+
+    &_wrapper {
+      position: relative;
+    }
+
+    &_icon {
+      position: absolute;
+      bottom: 68px;
+      left: 10px;
+    }
+  }
+
+  .cards {
+    display: flex;
+    justify-content: space-between;
+    font-size: 16px;
+    font-weight: 300;
+    cursor: pointer;
+    gap: 30px;
+    margin: 15px 0;
+
+    .card {
+      width: 100%;
+      height: 130px;
+      display: grid;
+      place-items: center;
+      background-color: #fff;
+      border-radius: 10px;
+      box-shadow: 0 2px 2px rgba(0, 32, 51, 0.02), 0 4px 20px rgba(0, 32, 51, 0.08);
+      @include transition(box-shadow);
+
+      &:hover {
+        box-shadow: 0 2px 2px rgba(0, 32, 51, 0.02), 0 4px 30px rgba(0, 32, 51, 0.25);
+        @include transition(box-shadow);
+      }
+
+      &_content {
+        display: grid;
+        place-items: center;
+
+        & > span {
+          margin-top: 10px;
+        }
+      }
+    }
+  }
+
+  .services {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    gap: 75px;
+
+    & div {
+      display: grid;
+      gap: 25px;
+
+      > a {
+        display: flex;
+        align-items: center;
+        justify-content: left;
+        color: #333333;
+        text-decoration: none;
+        background-color: transparent;
+        //background-color: $main-background-light-darkness;
+        @include transition(box-shadow);
+        padding-right: 20px;
+
+        > div {
+          background-color: #DADCE9;
+          border-radius: 50%;
+          width: 45px;
+          height: 45px;
+          display: grid;
+          place-items: center;
+          margin-right: 10px;
+        }
+
+        &:hover {
+          box-shadow: 0 2px 2px rgba(0, 32, 51, 0.02), 0 4px 20px rgba(0, 32, 51, 0.08);
+          @include transition(box-shadow);
+          border-radius: 25px;
+          //@include transition(background-color);
+        }
+      }
+    }
+
+    &_header {
+      display: flex;
+      align-items: flex-end;
+      justify-content: space-between;
+
+      a {
+        font-weight: 300;
+        font-size: 18px;
+        text-decoration-line: underline;
+        color: #F26126;
+      }
+    }
+
+    &_wrapper {
+      margin: 80px 0;
+      display: grid;
+      gap: 30px;
+    }
+  }
+
+}
+
+
