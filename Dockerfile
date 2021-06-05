@@ -14,4 +14,4 @@ COPY . .
 ARG BASE_URL
 RUN npm run build
 
-CMD ["serve", "dist", "-l", "80"]
+CMD ["serve", "dist/mf2-payments", "-l", "80"]
