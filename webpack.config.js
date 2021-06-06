@@ -10,7 +10,7 @@ sharedMappings.register(
 module.exports = {
   output: {
     uniqueName: "mf2Payments",
-    publicPath: "auto"
+    publicPath: "/payments/"
   },
   optimization: {
     runtimeChunk: false
